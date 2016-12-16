@@ -1,0 +1,14 @@
+extends layout
+extends navbar
+
+block content
+    #main-content.centered
+        .row
+            h1.ui.huge.header.center.aligned.icon
+                img(src='http://sandhyajha.com/wp-content/uploads/2015/07/Fist-FredDouglas.jpg').ui.image.middle.algned.circular.centered.large.sixteen.side
+                | br
+                | #{title}
+            p Welcome to #{title}
+            h1 This is a new H1 from the page #{title}.
+            p this is to test reload for #{title}
+            button.ui.button.secondary Check Here

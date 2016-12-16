@@ -1,0 +1,11 @@
+extends layout
+
+block nav-bar
+    #nav-bar
+        .ui.secondary.pointing.menu.huge
+            .header.item #{title}
+            .active.item Home
+            .item About
+            .item Help
+            .right.menu
+                a(href='#').item.button Log In
