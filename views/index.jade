@@ -3,12 +3,36 @@ extends navbar
 
 block content
     #main-content.centered
-        .row
-            h1.ui.huge.header.center.aligned.icon
-                img(src='http://sandhyajha.com/wp-content/uploads/2015/07/Fist-FredDouglas.jpg').ui.image.middle.algned.circular.centered.large.sixteen.side
-                | br
-                | #{title}
-            p Welcome to #{title}
-            h1 This is a new H1 from the page #{title}.
-            p this is to test reload for #{title}
-            button.ui.button.secondary Check Here
+        h1.ui.huge.header.center.aligned.icon
+            img(src='http://sandhyajha.com/wp-content/uploads/2015/07/Fist-FredDouglas.jpg').ui.image.middle.algned.circular.centered.large.sixteen.side
+            br
+            //| #{title}
+        #main-title-header.ui.vertically.stackable.grid.center.aligned.padding
+            .ten.wide.column
+                h1 Welcome to #{title}
+                p A futures and equities analysis company
+                button.ui.button.secondary.basic.huge Check Here
+    .ui.divider
+        .ui.inverted.segment
+            .ui.vertically.divided.grid.middle.aligned.container.equal.width
+                .two.column.row
+                    .column
+                        img(src='http://semantic-ui.com/examples/assets/images/wireframe/image.png').ui.huge.image
+                    .column
+                        img(src='http://semantic-ui.com/examples/assets/images/wireframe/paragraph.png').ui.wireframe.image.huge
+            .ui.vertical.stripe.quote.segment
+                .ui.equal.width.stackable.interanlly.celled.grid
+                    .center.aligned.row
+                        .column
+                            button.ui.button View Sources
+                        .column
+                            button.ui.button View Sources
+            //.ui.gird.three.column.divided
+            //    .row
+            //        .column
+            //            button.ui.button View Sources
+            //        .column
+            //            button.ui.button View Sources
+            //        .column
+            //            button.ui.button View Sources
+
