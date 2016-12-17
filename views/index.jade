@@ -2,37 +2,65 @@ extends layout
 extends navbar
 
 block content
-    #main-content.centered
-        h1.ui.huge.header.center.aligned.icon
-            img(src='http://sandhyajha.com/wp-content/uploads/2015/07/Fist-FredDouglas.jpg').ui.image.middle.algned.circular.centered.large.sixteen.side
-            br
-            //| #{title}
-        #main-title-header.ui.vertically.stackable.grid.center.aligned.padding
-            .ten.wide.column
-                h1 Welcome to #{title}
-                p A futures and equities analysis company
-                button.ui.button.secondary.basic.huge Check Here
-    .ui.divider
-        .ui.inverted.segment
-            .ui.vertically.divided.grid.middle.aligned.container.equal.width
-                .two.column.row
-                    .column
-                        img(src='http://semantic-ui.com/examples/assets/images/wireframe/image.png').ui.huge.image
-                    .column
-                        img(src='http://semantic-ui.com/examples/assets/images/wireframe/paragraph.png').ui.wireframe.image.huge
-            .ui.vertical.stripe.quote.segment
-                .ui.equal.width.stackable.interanlly.celled.grid
-                    .center.aligned.row
-                        .column
-                            button.ui.button View Sources
-                        .column
-                            button.ui.button View Sources
-            //.ui.gird.three.column.divided
-            //    .row
-            //        .column
-            //            button.ui.button View Sources
-            //        .column
-            //            button.ui.button View Sources
-            //        .column
-            //            button.ui.button View Sources
+ br
+ br
+ br
+ #main-content.centered
+  h1.ui.huge.header.center.aligned.icon
+   img(src='http://sandhyajha.com/wp-content/uploads/2015/07/Fist-FredDouglas.jpg').ui.image.middle.algned.circular.centered.large.sixteen.side
+   br
+   //| #{title}
+  #main-title-header.ui.vertically.stackable.grid.center.aligned.padding
+   .ten.wide.column
+    h1 Welcome to #{title}
+    h3 A futures and equities analysis company
+    button.ui.button.secondary.basic.huge Check Here
+ .ui.divider
+  .ui.inverted.segment
+   .ui.vertically.divided.grid.middle.aligned.container.equal.width
+    .two.column.row
+     .column
+      img(src='http://semantic-ui.com/examples/assets/images/wireframe/image.png').ui.huge.image
+     .column
+      .row
+       img(src='http://semantic-ui.com/examples/assets/images/wireframe/paragraph.png').ui.wireframe.image
+       .huge
+      br
+      .ui.divider
+      br
+      .row
+       img(src='http://semantic-ui.com/examples/assets/images/wireframe/paragraph.png').ui.wireframe.image
+   .ui.vertical.stripe.quote.segment
+    //.ui.equal.width.stackable.interanlly.grid.column.divider
+    // .center.aligned.row
+    //  .column
+    //   button.ui.button View Sources
+    //  .column
+    //   button.ui.button View Sources
+    .ui.four.column.stackable.padded.grid.center.aligned
+     .row
+      .column
+       .item
+        .row
+         .column
+          .ui.medium.image
+           img(src='http://semantic-ui.com/examples/assets/images/wireframe/image.png')
+        .row
+         .column
+          .ui.small.image
+           img(src='http://semantic-ui.com/examples/assets/images/wireframe/paragraph.png').ui.wireframe.image
 
+
+     //  .ui.medium.image
+     //   img(src='http://semantic-ui.com/examples/assets/images/wireframe/image.png')
+     //  .row
+     //   button.ui.button.inverted.huge View Sources
+     // .column
+     //  .ui.small.image
+     //   img(src='http://semantic-ui.com/examples/assets/images/wireframe/image.png')
+     //  button.ui.button.inverted.huge View Sources
+     // .column
+     //  .ui.small.image
+     //   img(src='http://semantic-ui.com/examples/assets/images/wireframe/image.png')
+     //  button.ui.button.inverted.huge View Sources
+     //.ui

@@ -1,5 +1,5 @@
 {
-  "name": "untitled1",
+  "name": "BlackMarketTraders",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -16,5 +16,10 @@
     "node-sass-middleware": "0.9.8",
     "semantic-ui": "^2.2.6",
     "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "connect-livereload": "^0.6.0",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
   }
 }
