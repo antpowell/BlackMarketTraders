@@ -49,4 +49,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+var livereload = require('express-livereload');
+livereload.watch(app, config={});
+
 module.exports = app;
