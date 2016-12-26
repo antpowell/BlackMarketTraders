@@ -6,6 +6,22 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
     !=LRScript
   body
-    block append nav-bar
+    include ./navbar.jade
     block content
-    block append footer
+    block footer
+
+  footer
+
+//  script(src='https://www.gstatic.com/firebasejs/3.6.4/firebase.js')
+//<script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+//<script>
+//// Initialize Firebase
+//var config = {
+//  apiKey: "AIzaSyBmlyVkPQV5cqU4vYr-LcS2kPVZgMcBDGM",
+//authDomain: "dynamic-traders.firebaseapp.com",
+//databaseURL: "https://dynamic-traders.firebaseio.com",
+//storageBucket: "dynamic-traders.appspot.com",
+//messagingSenderId: "599437711575"
+//};
+//firebase.initializeApp(config);
+//</script>

@@ -2,8 +2,8 @@ var express = require('express');
 var router = express.Router();
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Dynamic Markets Analysis' });
+router.get('/', function (req, res, next) {
+		res.render('index', {title: 'Dynamic Markets Analysis'});
 });
 
 module.exports = router;

@@ -1,16 +1,14 @@
-extends layout
-
 block nav-bar
- #nav-bar
-  //.ui.pointing.menu.huge.fixed.borderless.main
-  .ui.secondary.pointing.menu.huge
-   .header.item
-    img(src='http://sandhyajha.com/wp-content/uploads/2015/07/Fist-FredDouglas.jpg').ui.circular.image.avatar
-   .header.item #{title}
-   .active.item Home
-   .item Reports
-   .item Download
-   .item About
-   .item Help
-   .right.menu
-    a(href='#').item.button Log In
+   //.ui.pointing.menu.huge.fixed.borderless.main
+   .ui.secondary.pointing.menu.huge
+      a(href='/').header.item
+         img(src='http://sandhyajha.com/wp-content/uploads/2015/07/Fist-FredDouglas.jpg').ui.circular.image.avatar
+      a(href='/').header.item #{title}
+      a(href='/').active.item Home
+      .item Reports
+      .item Download
+      .item About
+      .item Help
+      .right.menu
+         a(href='/login').ui.item.button.dropdown.item Log In
+            .menu

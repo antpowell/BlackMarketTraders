@@ -5,6 +5,9 @@ a {
   color: #00B7FF; }
 
 #fourth-section {
-  padding: 3em 0 3em 0; }
+  padding: 5em 0 5em 0; }
+
+body > .container.text {
+  height: 100%; }
 
 /*# sourceMappingURL=style.css.map */

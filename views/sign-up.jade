@@ -1,0 +1,36 @@
+extends layout
+extends index
+block content
+   link(rel='stylesheet' href='/stylesheets/login.css')
+   body
+      .ui.container.text.center.aligned.middle.aligned.grid
+         .column
+            h2.header.image
+               img(src='http://sandhyajha.com/wp-content/uploads/2015/07/Fist-FredDouglas.jpg').ui.circular.image.avatar
+               .content #{title}
+            .ui.large.form.left.aligned
+               .ui.stacked.segment
+                  .field
+                     label Full Name
+                     .ui.left.icon.input
+                        i.user.icon
+                        input(type='text' name='full-name' placeholder='Full Name')
+                  .field
+                     label E-mail
+                     .ui.left.icon.input
+                        i.at.icon
+                        input(type='text' name='email' placeholder='E-mail address')
+                  .field
+                     label.left.aligned Date of Birth
+                     .ui.left.icon.input
+                        i.calendar.icon
+                        input(type='date' name='DOB' placeholder='Date of Birth')
+                  .field
+                     .container.left.aligned
+                        label Password
+                        .ui.left.icon.input
+                           i.privacy.icon
+                           input(type='password' name='password' placeholder='Password')
+                  .ui.large.fluid.button.submit Create User
+            .ui.message Already have an account?
+               a(href='login')   Log In
