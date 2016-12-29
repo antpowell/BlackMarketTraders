@@ -5,10 +5,10 @@ block nav-bar
          img(src='http://sandhyajha.com/wp-content/uploads/2015/07/Fist-FredDouglas.jpg').ui.circular.image.avatar
       a(href='/').header.item #{title}
       a(href='/').active.item Home
-      .item Reports
-      .item Download
-      .item About
-      .item Help
+      a(href='/').item Reports
+      a(href='/').item Download
+      a(href='/about').item About
+      a(href='/').item Help
       .right.menu
          a(href='/login').ui.item.button.dropdown.item Log In
             .menu

@@ -9,12 +9,15 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 var signup = require('./routes/signup');
 var login = require('./routes/login');
+var about = require('./routes/about');
 
 var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
+
+app.locals.title= 'Dynamic Markets';
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -34,6 +37,7 @@ app.use('/', index);
 app.use('/users', users);
 app.use('/sign-up', signup);
 app.use('/login', login);
+app.use('/about', about);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

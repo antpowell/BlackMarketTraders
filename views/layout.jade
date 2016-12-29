@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    title= title
+    title #{title}
     link(rel='stylesheet', href='/semantic/dist/semantic.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
     !=LRScript
@@ -11,6 +11,7 @@ html
     block footer
 
   footer
+  script(src='/reload/reload.js')
 
 //  script(src='https://www.gstatic.com/firebasejs/3.6.4/firebase.js')
 //<script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>

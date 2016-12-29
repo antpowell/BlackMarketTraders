@@ -10,4 +10,7 @@ a {
 body > .container.text {
   height: 100%; }
 
+.column {
+  box-sizing: border-box; }
+
 /*# sourceMappingURL=style.css.map */
