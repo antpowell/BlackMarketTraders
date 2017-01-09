@@ -1,7 +1,7 @@
 extends layout
 extends index
 block content
-   link(rel='stylesheet' href='/stylesheets/login.css')
+   //link(rel='stylesheet' href='/stylesheets/login.css')
    .ui.container.text.center.aligned.middle.aligned.grid
       .column
          h2.header.image
@@ -20,6 +20,6 @@ block content
                      .ui.left.icon.input
                         i.privacy.icon
                         input(type='password' name='password' placeholder='Password')
-               .ui.large.fluid.button.submit Log In
+               a(href='users')#log-in-button.ui.large.fluid.button.submit Log In.
          .ui.message Need an account?
             a(href='sign-up')   Sign Up

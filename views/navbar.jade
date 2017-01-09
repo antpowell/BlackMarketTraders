@@ -1,14 +1,14 @@
 block nav-bar
    //.ui.pointing.menu.huge.fixed.borderless.main
-   .ui.secondary.pointing.menu.huge
+   .ui.secondary.pointing.stackable.menu.huge.top.fixed
       a(href='/').header.item
          img(src='http://sandhyajha.com/wp-content/uploads/2015/07/Fist-FredDouglas.jpg').ui.circular.image.avatar
       a(href='/').header.item #{title}
-      a(href='/').active.item Home
-      a(href='/').item Reports
-      a(href='/').item Download
-      a(href='/about').item About
-      a(href='/').item Help
+      a(href='/')#navbar-home.item Home
+      a(href='account')#navbar-account.item Account
+      a(href='/')#navbar-download.item Download
+      a(href='about')#navbar-About.item About
+      a(href='/')#navbar-help.item Help
       .right.menu
-         a(href='/login').ui.item.button.dropdown.item Log In
+         a(href='/login')#navigation-login-button.item Log In
             .menu

@@ -1,0 +1,12 @@
+{
+  "commodities-list":[
+    {"Agricultural":[
+      {"Grain, Food, and Fiber":""},
+      {"Livestock and Meat":""}
+    ]},
+    {"Energy":""},
+    {"Metals":[{"Industrial":""},
+                {"Precious":""}]},
+    {"Other":""}
+  ]
+}

@@ -4,12 +4,14 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+// var commoditiesList = require(__dirname+'/data/commodities_list.json');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
 var signup = require('./routes/signup');
 var login = require('./routes/login');
 var about = require('./routes/about');
+var account = require('./routes/accounts');
 
 var app = express();
 
@@ -17,7 +19,11 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
-app.locals.title= 'Dynamic Markets';
+// app.set('commodities-list', commoditiesList);
+
+app.locals.title= 'Dynamkt.com';
+app.locals.tableHeaders={1:'Trading Instrument',2:'Trade Date', 3:'Action', 4:'Position', 5:'Latest Price', 6:'Entry Price', 7:'Points', 8:'Contracts',9:'Profit or Loss on Trade Yellow = Open Position',10:'Cumulative Commissions',11:'Cumulative Net Profit/Loss',12:'Initial Margin',13:'Beginning Date of Trading',14:'Account Total',15:'N-Day Gain Factor since Begin Date'};
+// app.locals.commoditiesList = commoditiesList;
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -26,8 +32,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use(require('node-sass-middleware')({
-		src: path.join(__dirname, '/public'),
-		dest: path.join(__dirname, '/public'),
+		src:  path.join(__dirname, 'public/stylesheets'),
+		dest: path.join(__dirname, 'public/stylesheets'),
 		indentedSyntax: true,
 		sourceMap: true
 }));
@@ -38,6 +44,7 @@ app.use('/users', users);
 app.use('/sign-up', signup);
 app.use('/login', login);
 app.use('/about', about);
+app.use('/account', account);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

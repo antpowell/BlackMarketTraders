@@ -1,0 +1,451 @@
+extends layout
+append links
+   link(rel='stylesheet', href='/stylesheets/users.css')
+//block nav-bar
+block content
+   //button#menu-toggle-button.ui.button.icon.circular
+   //   i.ui.icon.chevron.left
+   .ui.vertical.menu.fixed.bottom.attached.sidebar
+      .ui.divided.item
+         .item
+            .ui.icon.header.center.aligned
+               img(src='http://semantic-ui.com/images/avatar/large/steve.jpg').ui.circular.image.tiny.centered
+               .content
+                  .ui.center.aligned #{user.name}'s Account
+         .item
+         br
+         br
+         br
+         br
+   block main-content
+      #main-content
+         .ui.container.fluid
+            h1.header Stock Index Futures Trading Portfolio Analytics
+            table(border='1', cellpadding='3').ui.table.celled
+               thead
+                  tr
+                     th(align='RIGHT')
+                        b Instrument
+                     th(align='RIGHT')
+                        b Tradedate
+                     th(align='RIGHT')
+                        b Action
+                     th(align='RIGHT')
+                        b Position
+                     th(align='RIGHT')
+                        b Closing Price
+                     th(align='RIGHT')
+                        b Entry Price
+                     th(align='RIGHT')
+                        b Points
+                     th(align='RIGHT')
+                        b # Units
+                     th(align='RIGHT')
+                        b P/L on Trade
+                     th(align='RIGHT')
+                        b P/L All Trades
+                     th(align='RIGHT')
+                        b Comns
+                     th(align='RIGHT')
+                        b P/L Less Comns
+                     th(align='RIGHT')
+                        b Margin
+                     th(align='RIGHT')
+                        b Start date
+                     th(align='RIGHT')
+                        b Acct Total
+                     th(align='RIGHT')
+                        b Ret Factor
+               tbody
+                  tr
+                     td(align='RIGHT') Mar2017YM
+                     td(align='RIGHT')
+                        b 12/29/2016
+                     td(align='RIGHT')
+                        b Sell
+                     td(align='RIGHT')
+                        b Short
+                     td(align='RIGHT')
+                        b 19759.00
+                     td(align='RIGHT')
+                        b 19759.00
+                     td(align='RIGHT')
+                        b .00
+                     td(align='RIGHT')
+                        b 01
+                     td(align='RIGHT')
+                        b
+                     td(align='RIGHT')
+                        b 11880
+                     td(align='RIGHT')
+                        b 40
+                     td(align='RIGHT')
+                        b 11840
+                     td(align='RIGHT')
+                        b 2813
+                     td(align='RIGHT')
+                        b 08/22/2016
+                     td(align='RIGHT')
+                        b 14653
+                     td(align='RIGHT')
+                        b 4.21
+                  tr
+                     td(align='RIGHT') Mar2017ES
+                     td(align='RIGHT')
+                        b 12/30/2016
+                     td(align='RIGHT')
+                        b Hold
+                     td(align='RIGHT')
+                        b Short
+                     td(align='RIGHT')
+                        b 2242.75
+                     td(align='RIGHT')
+                        b 2245.00
+                     td(align='RIGHT')
+                        b 2.25
+                     td(align='RIGHT')
+                        b 01
+                     td(align='RIGHT')
+                        b 113
+                     td(align='RIGHT')
+                        b 4175
+                     td(align='RIGHT')
+                        b 55
+                     td(align='RIGHT')
+                        b 4120
+                     td(align='RIGHT')
+                        b 3500
+                     td(align='RIGHT')
+                        b 06/09/2016
+                     td(align='RIGHT')
+                        b 7620
+                     td(align='RIGHT')
+                        b 1.18
+                  tr
+                     td(align='RIGHT') Mar2017EW
+                     td(align='RIGHT')
+                        b 12/30/2016
+                     td(align='RIGHT')
+                        b Hold
+                     td(align='RIGHT')
+                        b None
+                     td(align='RIGHT')
+                        b 1666.30
+                     td(align='RIGHT')
+                        b .00
+                     td(align='RIGHT')
+                        b .00
+                     td(align='RIGHT')
+                        b 00
+                     td(align='RIGHT')
+                        b
+                     td(align='RIGHT')
+                        b 10540
+                     td(align='RIGHT')
+                        b 10
+                     td(align='RIGHT')
+                        b 10530
+                     td(align='RIGHT')
+                        b 3700
+                     td(align='RIGHT')
+                        b 11/03/2016
+                     td(align='RIGHT')
+                        b 14230
+                     td(align='RIGHT')
+                        b 2.85
+                  tr
+                     td(align='RIGHT') Mar2017NQ
+                     td(align='RIGHT')
+                        b 12/30/2016
+                     td(align='RIGHT')
+                        b Sell
+                     td(align='RIGHT')
+                        b Short
+                     td(align='RIGHT')
+                        b 4909.75
+                     td(align='RIGHT')
+                        b 4909.75
+                     td(align='RIGHT')
+                        b .00
+                     td(align='RIGHT')
+                        b 01
+                     td(align='RIGHT')
+                        b
+                     td(align='RIGHT')
+                        b 5875
+                     td(align='RIGHT')
+                        b 37
+                     td(align='RIGHT')
+                        b 5838
+                     td(align='RIGHT')
+                        b 3250
+                     td(align='RIGHT')
+                        b 06/09/2016
+                     td(align='RIGHT')
+                        b 9088
+                     td(align='RIGHT')
+                        b 1.80
+                  tr
+                     td(align='RIGHT') Mar2017RJ
+                     td(align='RIGHT')
+                        b 12/30/2016
+                     td(align='RIGHT')
+                        b Sell
+                     td(align='RIGHT')
+                        b Short
+                     td(align='RIGHT')
+                        b 1360.80
+                     td(align='RIGHT')
+                        b 1360.80
+                     td(align='RIGHT')
+                        b .00
+                     td(align='RIGHT')
+                        b 01
+                     td(align='RIGHT')
+                        b
+                     td(align='RIGHT')
+                        b 11400
+                     td(align='RIGHT')
+                        b 24
+                     td(align='RIGHT')
+                        b 11376
+                     td(align='RIGHT')
+                        b 4250
+                     td(align='RIGHT')
+                        b 08/23/2016
+                     td(align='RIGHT')
+                        b 15626
+                     td(align='RIGHT')
+                        b 2.68
+                  tr
+                     td(align='RIGHT') Mar2017DY
+                     td(align='RIGHT')
+                        b 12/29/2016
+                     td(align='RIGHT')
+                        b Sell
+                     td(align='RIGHT')
+                        b Short
+                     td(align='RIGHT')
+                        b 11442.50
+                     td(align='RIGHT')
+                        b 11442.50
+                     td(align='RIGHT')
+                        b .00
+                     td(align='RIGHT')
+                        b 01
+                     td(align='RIGHT')
+                        b
+                     td(align='RIGHT')
+                        b 281
+                     td(align='RIGHT')
+                        b 10
+                     td(align='RIGHT')
+                        b 271
+                     td(align='RIGHT')
+                        b 4250
+                     td(align='RIGHT')
+                        b 11/23/2016
+                     td(align='RIGHT')
+                        b 4521
+                     td(align='RIGHT')
+                        b .06
+                  tr.t-last
+                     td(align='RIGHT')
+                     td(align='RIGHT')
+                        b
+                     td(align='RIGHT')
+                        b
+                     td(align='RIGHT')
+                        b
+                     td(align='RIGHT')
+                        b
+                     td(align='RIGHT')
+                        b
+                     td(align='RIGHT')
+                        b
+                     td(align='RIGHT')
+                        b
+                     td(align='RIGHT')
+                        b Totals:
+                     td(align='RIGHT')
+                        b 44151
+                     td(align='RIGHT')
+                        b 176
+                     td(align='RIGHT')
+                        b 43975
+                     td(align='RIGHT')
+                        b 21763
+                     td(align='RIGHT')
+                        b
+                     td(align='RIGHT')
+                        b 65738
+                     td(align='RIGHT')
+                        b 2.13
+
+
+
+            h1 Analysis
+            table(border='1', cellpadding='3').ui.table.celled
+               thead
+                  tr
+                     th(align='RIGHT')
+                        b Instrument
+                     th(align='RIGHT')
+                        b Pos Trades
+                     th(align='RIGHT')
+                        b Neg Trades
+                     th(align='RIGHT')
+                        b Pos/Neg
+                     th(align='RIGHT')
+                        b Net Gain(Loss)
+                     th(align='RIGHT')
+                        b Gain
+                     th(align='RIGHT')
+                        b Loss
+                     th(align='RIGHT')
+                        b Gain/Loss
+                     th(align='RIGHT')
+                        b # Days
+                     th(align='RIGHT')
+                        b Ann Return
+                     th(align='RIGHT')
+                        b Maximum Drawdown
+               tbody
+                  tr
+                     td(align='RIGHT')
+                        b Mar2017YM
+                     td(align='RIGHT')
+                        b 23
+                     td(align='RIGHT')
+                        b 17
+                     td(align='RIGHT')
+                        b 1.4
+                     td(align='RIGHT')
+                        b 11880
+                     td(align='RIGHT')
+                        b 22123
+                     td(align='RIGHT')
+                        b 10203
+                     td(align='RIGHT')
+                        b 2.17
+                     td(align='RIGHT')
+                        b 130
+                     td(align='RIGHT')
+                        b 11.82
+                     td(align='RIGHT')
+                        b -6561
+                  tr
+                     td(align='RIGHT')
+                        b Mar2017ES
+                     td(align='RIGHT')
+                        b 35
+                     td(align='RIGHT')
+                        b 20
+                     td(align='RIGHT')
+                        b 1.8
+                     td(align='RIGHT')
+                        b 4175
+                     td(align='RIGHT')
+                        b 20448
+                     td(align='RIGHT')
+                        b 16218
+                     td(align='RIGHT')
+                        b 1.26
+                     td(align='RIGHT')
+                        b 205
+                     td(align='RIGHT')
+                        b 2.10
+                     td(align='RIGHT')
+                        b -2114
+                  tr
+                     td(align='RIGHT')
+                        b Mar2017EW
+                     td(align='RIGHT')
+                        b 6
+                     td(align='RIGHT')
+                        b 4
+                     td(align='RIGHT')
+                        b 1.5
+                     td(align='RIGHT')
+                        b 10540
+                     td(align='RIGHT')
+                        b 17196
+                     td(align='RIGHT')
+                        b 6646
+                     td(align='RIGHT')
+                        b 2.59
+                     td(align='RIGHT')
+                        b 58
+                     td(align='RIGHT')
+                        b 17.91
+                     td(align='RIGHT')
+                        b -3421
+                  tr
+                     td(align='RIGHT')
+                        b Mar2017NQ
+                     td(align='RIGHT')
+                        b 13
+                     td(align='RIGHT')
+                        b 24
+                     td(align='RIGHT')
+                        b .5
+                     td(align='RIGHT')
+                        b 5875
+                     td(align='RIGHT')
+                        b 76738
+                     td(align='RIGHT')
+                        b 70826
+                     td(align='RIGHT')
+                        b 1.08
+                     td(align='RIGHT')
+                        b 205
+                     td(align='RIGHT')
+                        b 3.20
+                     td(align='RIGHT')
+                        b -22555
+                  tr
+                     td(align='RIGHT')
+                        b Mar2017RJ
+                     td(align='RIGHT')
+                        b 11
+                     td(align='RIGHT')
+                        b 13
+                     td(align='RIGHT')
+                        b .8
+                     td(align='RIGHT')
+                        b 11400
+                     td(align='RIGHT')
+                        b 21981
+                     td(align='RIGHT')
+                        b 10557
+                     td(align='RIGHT')
+                        b 2.08
+                     td(align='RIGHT')
+                        b 130
+                     td(align='RIGHT')
+                        b 7.52
+                     td(align='RIGHT')
+                        b -7389
+                  tr
+                     td(align='RIGHT')
+                        b Mar2017DY
+                     td(align='RIGHT')
+                        b 3
+                     td(align='RIGHT')
+                        b 7
+                     td(align='RIGHT')
+                        b .4
+                     td(align='RIGHT')
+                        b 281
+                     td(align='RIGHT')
+                        b 858
+                     td(align='RIGHT')
+                        b 567
+                     td(align='RIGHT')
+                        b 1.51
+                     td(align='RIGHT')
+                        b 37
+                     td(align='RIGHT')
+                        b .63
+                     td(align='RIGHT')
+                        b -512

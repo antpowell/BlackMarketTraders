@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon -e js,jade,scss ./bin/www"
+    "start": "nodemon -e js,jade,scss ./bin/www",
+    "build-css": "node-sass --include-path scss stylesheet/*.scss stylesheet/*.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "dependencies": {
     "body-parser": "~1.15.2",
@@ -13,6 +15,7 @@
     "express": "~4.14.0",
     "jade": "~1.11.0",
     "morgan": "~1.7.0",
+    "node-sass": "^4.1.1",
     "node-sass-middleware": "0.9.8",
     "reload": "^1.1.0",
     "semantic-ui": "^2.2.6",

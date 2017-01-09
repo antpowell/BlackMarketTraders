@@ -1,0 +1,25 @@
+extends layout
+append links
+   link(rel='stylesheet', href='/stylesheets/account.css')
+block content
+   #main-content.ui.container
+      .ui.segment.piled
+         .ui.three.stackable.cards
+            a(href="users").card
+               br
+               .ui.header.huge
+                  i.ui.icon.leaf
+                  | Agricultural
+               br
+            a(href="users").card
+               br
+               .ui.header.huge
+                  i.ui.icon.lightning
+                  | Energy
+               br
+            a(href="users").card
+               br
+               .ui.header.huge
+                  i.ui.icon.database
+                  | Metals
+               br

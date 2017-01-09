@@ -1,0 +1,27 @@
+body{
+    position: relative;
+}
+.ui.vertical.menu.fixed {
+width: 300px;
+}
+.ui.fixed.menu+.ui.grid{
+    padding-top: 3.75rem;
+}
+h1{
+    text-align: center;
+}
+thead th{
+    color: whitesmoke!important;
+    background-color: #00B5AD!important;
+}
+#main-content{
+    display:inline-block;
+    position: absolute;
+    /*top: 50%;*/
+    /*transform: translateY(-50%);*/
+    left: 50%;
+    transform: translateX(-50%);
+}
+.t-last{
+    background-color: #aecde1;
+}
